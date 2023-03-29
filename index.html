@@ -15,6 +15,7 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css" />
   </head>
   <body>
     <header class="header">
@@ -57,7 +58,7 @@
     </header>
     <!-- SECTION HOME -->
     <section class="section section__home">
-      <div class="contianer">
+      <div class="container">
         <div class="section__home--inner">
           <div class="section__home--left">
             <h2 class="section__home--title">Learn Any Foreign Language</h2>
@@ -85,11 +86,13 @@
           <div class="skills__card--contianer">
             <!-- ARTICLE -->
             <article class="skills__card">
-              <img
-                src="./images/Shared goals-bro 2.png"
-                alt="  "
-                class="skills__card--img"
-              />
+              <div class="skills__card--img__container">
+                <img
+                  src="./images/Shared goals-bro 2.png"
+                  alt="  "
+                  class="skills__card--img"
+                />
+              </div>
               <div class="skills__card--desc">
                 <h4 class="skills__card--title">Speaking</h4>
                 <p class="skills__card--txt">
@@ -107,11 +110,13 @@
             </article>
             <!-- ARTICLE -->
             <article class="skills__card">
-              <img
-                src="./images/Typewriter-bro 1.png"
-                alt="  "
-                class="skills__card--img"
-              />
+              <div class="skills__card--img__container">
+                <img
+                  src="./images/Typewriter-bro 1.png"
+                  alt="  "
+                  class="skills__card--img"
+                />
+              </div>
               <div class="skills__card--desc">
                 <h4 class="skills__card--title">Writing</h4>
                 <p class="skills__card--txt">
@@ -124,11 +129,13 @@
             </article>
             <!-- ARTICLE -->
             <article class="skills__card">
-              <img
-                src="./images/House bookshelves-bro 1.png"
-                alt="  "
-                class="skills__card--img"
-              />
+              <div class="skills__card--img__container">
+                <img
+                  src="./images/House bookshelves-bro 1.png"
+                  alt="  "
+                  class="skills__card--img"
+                />
+              </div>
               <div class="skills__card--desc">
                 <h4 class="skills__card--title">Reading</h4>
                 <p class="skills__card--txt">
@@ -140,11 +147,13 @@
             </article>
             <!-- ARTICLE -->
             <article class="skills__card">
-              <img
-                src="./images/Podcast audience-bro 1.png"
-                alt="  "
-                class="skills__card--img"
-              />
+              <div class="skills__card--img__container">
+                <img
+                  src="./images/Podcast audience-bro 1.png"
+                  alt="  "
+                  class="skills__card--img"
+                />
+              </div>
               <div class="skills__card--desc">
                 <h4 class="skills__card--title">Listening</h4>
                 <p class="skills__card--txt">
@@ -204,6 +213,65 @@
       <div class="container">
         <div class="section__pricing--inner">
           <h3>Pricing</h3>
+          <div class="section__pricing--cards__container">
+            <article class="picing__card">
+              <div class="pricing__card--img__container">
+                <img
+                  src="./images/Online test-bro 1.png"
+                  alt=""
+                  class="pricing__card--img"
+                />
+              </div>
+              <div class="pricing__card--desc">
+                <h4 class="pricing__card--title">Self-study online course</h4>
+                <p class="pricing__card--p">
+                  Start learning English online in live classes with qualified
+                  EC teachers and students from all over the world.
+                </p>
+              </div>
+              <div class="pricing--txt">
+                <span>£5.99</span><span> per month</span>
+              </div>
+            </article>
+            <article class="picing__card">
+              <div class="pricing__card--img__container">
+                <img
+                  src="./images/Lesson-bro 1.png"
+                  alt=""
+                  class="pricing__card--img"
+                />
+              </div>
+              <div class="pricing__card--desc">
+                <h4 class="pricing__card--title">Live online classes</h4>
+                <p class="pricing__card--p">
+                  Interactive group classes with expert teachers. Free 7-day
+                  trial
+                </p>
+              </div>
+              <div class="pricing--txt">
+                <span>£12.99</span><span> per month</span>
+              </div>
+            </article>
+            <article class="picing__card">
+              <div class="pricing__card--img__container">
+                <img
+                  src="./images/Webinar-bro 2.png"
+                  alt=""
+                  class="pricing__card--img"
+                />
+              </div>
+              <div class="pricing__card--desc">
+                <h4 class="pricing__card--title">Personal Tuition</h4>
+                <p class="pricing__card--p">
+                  Online one-to-one English tutoring – enjoy our first session
+                  for only $1
+                </p>
+              </div>
+              <div class="pricing--txt">
+                <p><span>£20.99</span><span> per month</span></p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -220,12 +288,60 @@
                 class="section__contacts--img"
               />
             </div>
-            <div class="section__contacts--txt__container">
-              <p class="section__contacts--txt">
-                Discover your current English level by taking our free online
-                English test. Sign up to our newsletter for learning tips and
-                free resource
-              </p>
+            <div class="section__contacts--txtandinp__container">
+              <div class="section__contacts--txt__container">
+                <p class="section__contacts--txt">
+                  Discover your current English level by taking our free online
+                  English test. Sign up to our newsletter for learning tips and
+                  free resource
+                </p>
+              </div>
+              <div class="section__contacts--inp__container">
+                <form
+                  action="https://formsubmit.co/testrtestr67@gmail.com"
+                  method="post"
+                  class="cantacts--form"
+                >
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://127.0.0.1:5500/pages/thanks.html"
+                  />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New submission!"
+                  />
+                  <input
+                    type="hidden"
+                    name="_autoresponse"
+                    value="ваше собственное сообщение"
+                  />
+                  <!-- <div class="input--container">
+                  <label for="fullName">Ваше имя:</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Имя" />
+                </div> -->
+                  <div class="inp_and_btn--container">
+                    <div class="input--container">
+                      <!-- <label for="email">Ваш email:</label> -->
+                      <input
+                        class="contacts--inp"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Your E-mail"
+                      />
+                    </div>
+                    <!-- <div class="input--container">
+                      <label for="comment">Ваш коментарий:</label>
+                      <textarea type="text" id="comment" name="comment" placeholder="Комментарий" ></textarea>
+                    </div> -->
+                    <div class="contacts__form--btn__container">
+                      <button class="btn__form">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

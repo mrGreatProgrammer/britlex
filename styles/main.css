@@ -130,8 +130,11 @@
 }
 .skills__card--contianer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  column-gap: 30px;
 }
 /* SKILLS CARD */
 .skills__card {
@@ -139,8 +142,23 @@
   border-radius: 5px;
   padding: 8px 16px 45px 16px;
   margin: 10px 0;
+  /* width: 290px; */
+  width: 290px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 210px 250px 85px;
+}
+.skills__card:last-child {
+  margin-right: 0;
+}
+.skills__card--img__container {
+  display: flex;
+  justify-content: center;
 }
 .skills__card--img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
 }
 .skills__card--desc {
 }
@@ -209,7 +227,60 @@
 }
 
 /* SECTION PRICING */
-
+.section__pricing--cards__container {
+}
+.picing__card {
+  max-width: 445px;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+.pricing__card--img__container {
+}
+.pricing__card--img {
+  width: 100%;
+}
+.pricing__card--desc {
+}
+.pricing__card--title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+.pricing__card--p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #8f95a5;
+  margin: 10px 0;
+  text-align: center;
+}
+.pricing--txt {
+  background: #eeeeee;
+  border-radius: 5px;
+  padding: 5px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.pricing--txt > p > span:first-child {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #263238;
+}
+.pricing--txt > p > span:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #546269;
+}
 /* SECTION CONTACTS */
 
 .section__contacts--inner {
@@ -231,22 +302,63 @@
   color: #8f95a5;
 }
 
+/* CONTACTS FORM */
+.section__contacts--inp__container {
+}
+.cantacts--form {
+}
+.inp_and_btn--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input--container {
+}
+.contacts--inp {
+  width: 291px;
+  height: 50px;
+  border: 1px solid #8f95a5;
+  border-radius: 5px;
+  margin: 8px 0;
+  padding-left: 26px;
+}
+.contacts--inp::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8f95a5;
+}
+.contacts__form--btn__container {
+}
+.btn__form {
+  margin: 8px 0;
+  width: 290px;
+  height: 60px;
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
 /* FOOTER */
 .footer {
+  margin-top: 50px;
 }
 .footer__line {
   width: 100%;
   background: #c4c4c4;
   height: 1px;
 }
-.footer--inner{
+.footer--inner {
   padding: 26px 0;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
 }
-.footer--inner> p {
+.footer--inner > p {
   margin: 15px 0;
   font-weight: 500;
   font-size: 10px;
